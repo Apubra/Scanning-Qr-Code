@@ -1,0 +1,105 @@
+/* .preloader-scan {
+  position: fixed;
+  left: 0;
+  right: 0;
+  max-width: 200px;
+  display: table;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  ul {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    list-style-type: none;
+    text-align: center;
+  }
+  .laser {
+    width: 100%; // margin-left: -25%;
+    background-color: green;
+    height: 10px;
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    box-shadow: 0 0 4px red;
+    animation: scanning 2s infinite;
+  }
+  .diode {
+    animation: beam .01s infinite;
+  }
+}
+
+body {
+  height: 100%;
+}
+
+@keyframes beam {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes scanning {
+  50% {
+    transform: translateY(140px);
+  }
+} */
+
+.preloader-scan {
+  position: fixed;
+  left: 0;
+  right: 0;
+  max-width: 200px;
+  display: table;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+}
+.preloader-scan ul {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  list-style-type: none;
+  text-align: center;
+}
+.preloader-scan .laser {
+  width: 100%;
+  background-color: green;
+  height: 10px;
+  position: absolute;
+  top: 20%;
+  z-index: 2;
+  box-shadow: 0 0 4px red;
+  -webkit-animation: scanning 2s infinite;
+          animation: scanning 2s infinite;
+}
+.preloader-scan .diode {
+  -webkit-animation: beam 0.01s infinite;
+          animation: beam 0.01s infinite;
+}
+
+body {
+  height: 100%;
+}
+
+@-webkit-keyframes beam {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes beam {
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes scanning {
+  50% {
+    transform: translateY(140px);
+  }
+}
+@keyframes scanning {
+  50% {
+    transform: translateY(140px);
+  }
+}
